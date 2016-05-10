@@ -12,10 +12,9 @@
 
         <ul class="main-menu" ng-class="{open:menuOpen}">
             <li><button ng-click="switchMenu()" class="main-menu-button"><span class="fa fa-bars fa-2x"></span></button></li>
-            <li><a href="#home">Startseite</a></li>
-            <li><a href="updates.html">Updates</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="about.html">Über uns</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#msg">Schreibe Nachricht</a></li>
+            <li><a href="#about">Über uns</a></li>
         </ul>
 
         <div class="page" ng-class="{wide:!menuOpen}">
@@ -27,10 +26,37 @@
                     <p>Suspendisse hendrerit placerat velit quis tempus. In faucibus vel magna quis pulvinar. In hac habitasse platea dictumst. Nulla facilisi. Morbi suscipit eros quis dictum porttitor. Fusce ut faucibus felis, ut condimentum velit. Cras vel gravida augue. Vivamus id aliquet arcu, eu varius nunc. </p>
                 </div>
                 <div class="box right">
-                    
+                    <img src="img/example.svg"/>
                 </div>    
             </div>
+            <h2 id="msg">Schreibe eine Nachricht</h2>
+            <div class="row">
+                <div class="box left">
+                    <form>
+                        <input type="text" placeholder="Name" name="name"/>
+                        <textarea placeholder="Nachricht" name="message"></textarea>
+                        <button type="submit">Senden</button>
+                    </form>
+                </div>
+                <div class="box right">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis finibus orci, vitae interdum nulla sagittis ac. Nunc non tempus metus. Vivamus viverra lectus vitae eleifend vehicula. In nisl odio, placerat quis ipsum sit amet, malesuada aliquet eros. Vestibulum ac nibh ipsum. Mauris eu nisl lectus. Sed molestie enim a sodales consectetur. Mauris blandit lacinia rutrum. Vivamus laoreet eu ante et semper. Aenean id sapien non mauris lobortis efficitur eu volutpat elit. Pellentesque cursus, nunc sit amet cursus congue, augue augue blandit diam, at mattis eros quam sed lacus.</p>
+
+                    <p>Suspendisse hendrerit placerat velit quis tempus. In faucibus vel magna quis pulvinar. In hac habitasse platea dictumst. Nulla facilisi. Morbi suscipit eros quis dictum porttitor. Fusce ut faucibus felis, ut condimentum velit. Cras vel gravida augue. Vivamus id aliquet arcu, eu varius nunc. </p>
+                </div>
+                
+            </div>  
+            <h2 id="about">Über uns</h2>
+            <div class="row">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis finibus orci, vitae interdum nulla sagittis ac. Nunc non tempus metus. Vivamus viverra lectus vitae eleifend vehicula. In nisl odio, placerat quis ipsum sit amet, malesuada aliquet eros. Vestibulum ac nibh ipsum. Mauris eu nisl lectus. Sed molestie enim a sodales consectetur. Mauris blandit lacinia rutrum. Vivamus laoreet eu ante et semper. Aenean id sapien non mauris lobortis efficitur eu volutpat elit. Pellentesque cursus, nunc sit amet cursus congue, augue augue blandit diam, at mattis eros quam sed lacus.</p>
+            </div>
         </div>
+        <footer>
+            <div class="page left" ng-class="{wide:!menuOpen}">
+                <div class="row">
+                    <p>Suspendisse hendrerit placerat velit quis tempus. In faucibus vel magna quis pulvinar. In hac habitasse platea dictumst. Nulla facilisi. Morbi suscipit eros quis dictum porttitor. Fusce ut faucibus felis, ut condimentum velit. Cras vel gravida augue. Vivamus id aliquet arcu, eu varius nunc.</p>
+                </div>
+            </div>
+        </footer>
         <script src="app.js"></script>
 	</body>
 </html>

@@ -11,10 +11,13 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-size: 18pt;
+    margin: 0px;
+    margin-bottom: 1em;
 }
 
 h1 {
     font-size: 4em;
+    margin: .8em 0px 1.2em 0px;
 }
 
 h2 {
@@ -83,15 +86,23 @@ ul.main-menu.open {
     margin-left: 5%;
 }
 
+.page.left {
+    text-align: left;
+}
+
 .row {
     width: 100%;
     max-width: 960px;
     margin: auto;
+    border-bottom: 1px solid #aaa;
 }
 
 .box{
     box-sizing: border-box;
-    width: 50%;
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 3%;
 }
     
     
@@ -100,7 +111,40 @@ ul.main-menu.open {
 }    
 
 .box.right{
-    text-align: center;
+    text-align: left;
+}
+
+
+.box img {
+    width: 100%;
+}
+
+input, textarea, button {
+    display: block;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    min-height: 20px;
+    font-family: 'Univers','Helvetiva Neue', 'Arial';
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 5px 0px;
+}
+
+form button {
+    width: 40%;
+    margin-left: 60%;
+    background-color: #999;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: #eee;
+    margin-top: 40px;
+    padding-top: 40px;
 }
 
 @media (max-width: 960px) {
@@ -122,7 +166,7 @@ ul.main-menu.open {
     }
     
     .page, .page.wide {
-        margin-left: 0px;
+        margin-left: 10%;
     }
     
     .box {
